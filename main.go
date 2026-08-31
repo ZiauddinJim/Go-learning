@@ -43,7 +43,9 @@ func main() {
 	// stringFormattingVerbs()
 	// boolFormattingVerbs()
 	// floatFormattingVerbs()
-	dataTypes()
+	// dataTypes()
+	// Note: array.go file function
+	Array()
 }
 func syntax() {
 	// Syntax: with the var keyword
