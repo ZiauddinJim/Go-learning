@@ -31,14 +31,19 @@ package main
 import "fmt"
 
 func main() {
-
 	// variable()
 	// initialValue()
 	// MultipleValue()
 	// BlockDeclaration()
 	// Constants()
 	// multiConst()
-	outputFunc()
+	// outputFunc()
+	// generalFormattingVerbs()
+	// integerFormattingVerbs()
+	// stringFormattingVerbs()
+	// boolFormattingVerbs()
+	// floatFormattingVerbs()
+	dataTypes()
 }
 func syntax() {
 	// Syntax: with the var keyword
@@ -118,4 +123,65 @@ func outputFunc() {
 	)
 	fmt.Printf("Name: %v, Type: %T\n", name, name)
 	fmt.Printf("Score: %v, Type: %T\n", score, score)
+}
+func generalFormattingVerbs() {
+	value := 42.5
+	fmt.Printf("Default: %v\n", value)
+	fmt.Printf("Go-syntax: %#v\n", value)
+	fmt.Printf("Type: %T\n", value)
+	fmt.Printf("Percentage: %v%%\n", value)
+}
+func integerFormattingVerbs() {
+	i := 20
+	fmt.Printf("Binary: %b\n", i)
+	fmt.Printf("Decimal: %d\n", i)
+	fmt.Printf("sign & Decimal: %+d\n", i)
+	fmt.Printf("Octal: %o\n", i)
+	fmt.Printf("prefix Octal: %O\n", i)
+	fmt.Printf("Hexadecimal(x OR X): %x\n", i)
+	fmt.Printf("prefix Hexadecimal: %#x\n", i)
+	fmt.Printf("ped with space(justified right): %4d\n", i)
+	fmt.Printf("ped with space(justified lef): %-4d\n", i)
+	fmt.Printf("ped with zeros: %04d\n", i)
+}
+func stringFormattingVerbs() {
+	text := "Hello"
+	fmt.Printf("Plain text: %s\n", text)
+	fmt.Printf("Double quotation: %q\n", text)
+	fmt.Printf("plain string(w-8 justify right): %8s\n", text)
+	fmt.Printf("plain string(w-8 justify left): %-8s\n", text)
+	fmt.Printf("hex dump of bytes value: %x\n", text)
+	fmt.Printf("hex dump of bytes value space: % x\n", text)
+}
+func boolFormattingVerbs() {
+	boolean := true
+	fmt.Printf("Bool verify: %t\n", boolean)
+}
+func floatFormattingVerbs() {
+	i := 3.14159265
+	fmt.Printf("Default: %f\n", i)
+	fmt.Printf("Precision 2: %.2f\n", i)
+	fmt.Printf("Width-6 Precision 2: %6.2f\n", i)
+	fmt.Printf("Scientific: %e\n", i)
+	fmt.Printf("necessary digits: %g\n", i)
+}
+func dataTypes() {
+	var (
+		// Boolean
+		a bool = true
+		// Syntax: Numeric data type. 3 categories
+		// Integer
+		b int = 5
+		// Float
+		c float32 = 5.5
+		// Complex types
+		d complex64 = 3 + 4i
+		// String
+		e string = "Hello"
+	)
+	fmt.Println("Boolean: ", a)
+	fmt.Println("Integer: ", b)
+	fmt.Println("Float: ", c)
+	fmt.Println("Complex: ", d)
+	fmt.Println("string: ", e)
 }
