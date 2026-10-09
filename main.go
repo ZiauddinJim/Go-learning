@@ -54,6 +54,7 @@ func main() {
 	// functionA()
 	// Note: functionNeed.go file function
 	whyNeedFunction()
+	Array()
 }
 func syntax() {
 	// Syntax: with the var keyword
