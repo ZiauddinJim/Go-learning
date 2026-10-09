@@ -45,7 +45,15 @@ func main() {
 	// floatFormattingVerbs()
 	// dataTypes()
 	// Note: array.go file function
-	Array()
+	// Array()
+	// Note: slices.go file function
+	// slices()
+	// Note: If else file function
+	// ifElse()
+	// Note: function.go file function
+	// functionA()
+	// Note: functionNeed.go file function
+	whyNeedFunction()
 }
 func syntax() {
 	// Syntax: with the var keyword
